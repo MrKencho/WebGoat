@@ -24,7 +24,7 @@ pipeline {
         steps {
           sh 'pip3 install semgrep'
           sh 'pwd'
-          sh 'semgrep --config p/ci --output scan_results.json --json'
+          sh 'semgrep --config ci --output scan_results.json --json'
       }
     }
   }
